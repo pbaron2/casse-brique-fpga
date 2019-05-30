@@ -1,0 +1,72 @@
+#include <stdio.h>
+#include "io.h"
+#include "system.h"
+#include <math.h>
+
+
+
+int main()
+{
+  float position_x = 50;
+  float position_y = 50;
+  float vitesse_x = 0.5;
+  float vitesse_y = 0.5;
+  int vitesse = sqrt((vitesse_x)*(vitesse_x)+(vitesse_y)*(vitesse_y));
+
+  while (1){
+	   int pos_raquette = IORD(POS_RAQUETTE_BASE,0);
+	  for (int i=0; i<vitesse; i++){
+		  position_x +=(vitesse_x)/vitesse;
+		  position_y +=(vitesse_y)/vitesse;
+
+
+	  if (position_y == 440) {
+		  if ( (int) (position_x)>pos_raquette &&  (int) (position_x)<pos_raquette+120){
+			  vitesse_x = - vitesse_x ;
+			  vitesse_y = - vitesse_y ;
+
+		  }
+	  }
+	  if ((int) position_y == 0){
+		  vitesse_y = - vitesse_y ;
+	  }
+	  if ((int) position_y == 460){
+	  		 //IOWR(PERDU_BASE,0,1) ;
+		  vitesse_y = - vitesse_y ;
+	  	  }
+	  if ( (int) position_x == 0){
+		  vitesse_x = - vitesse_x ;
+
+	  }
+	  if ((int) position_x == 620){
+		  vitesse_x = - vitesse_x ;
+	  }
+	  if ((int) position_y <= 400){
+		  if (((int) (position_y)) % 40 == 0){
+			  IOWR(ADR_BRIQUE_BASE,0,(position_x/80)+24*(position_y/40)-1);
+			  IOWR(EN_NIOS_BASE,0,1);
+			   int br_morte = IORD(BRIQUE_MORTE_BASE,0);
+			   IOWR(EN_NIOS_BASE,0,0);
+			  if (br_morte == 0){
+				  vitesse_y = - vitesse_y;
+			  }
+		  }
+		  if ( ((int) (position_x))%80 == 0){
+			  IOWR(ADR_BRIQUE_BASE,0,((int) position_x/80)+24*((int) position_y/40)-1);
+			  			  IOWR(EN_NIOS_BASE,0,1);
+			  			   int br_morte = IORD(BRIQUE_MORTE_BASE,0);
+			  			 IOWR(EN_NIOS_BASE,0,0);
+			  			  if (br_morte == 0){
+			  				  vitesse_x = - vitesse_x;
+			  			  }
+		  }
+	  }
+
+  }
+	  IOWR(FINCALCUL_BASE,0,1);
+	  IOWR(FINCALCUL_BASE,0,0);
+	  IOWR(X_POSITION_BASE,0,(int) position_x);
+	  IOWR(Y_POSITION_BASE,0,(int) position_y);
+
+  }
+}

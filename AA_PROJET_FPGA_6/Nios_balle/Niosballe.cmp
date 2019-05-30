@@ -1,0 +1,23 @@
+	component Niosballe is
+		port (
+			adr_brique_export   : out   std_logic_vector(8 downto 0);                     -- export
+			brique_morte_export : in    std_logic                     := 'X';             -- export
+			clk_clk             : in    std_logic                     := 'X';             -- clk
+			en_export           : in    std_logic                     := 'X';             -- export
+			en_nios_export      : out   std_logic;                                        -- export
+			fincalcul_export    : out   std_logic;                                        -- export
+			perdu_export        : out   std_logic;                                        -- export
+			pos_raquette_export : in    std_logic_vector(10 downto 0) := (others => 'X'); -- export
+			reset_reset_n       : in    std_logic                     := 'X';             -- reset_n
+			sram_de2_ADDR       : out   std_logic_vector(17 downto 0);                    -- ADDR
+			sram_de2_DQ         : inout std_logic_vector(15 downto 0) := (others => 'X'); -- DQ
+			sram_de2_WE_N       : out   std_logic;                                        -- WE_N
+			sram_de2_OE_N       : out   std_logic;                                        -- OE_N
+			sram_de2_UB_N       : out   std_logic;                                        -- UB_N
+			sram_de2_LB_N       : out   std_logic;                                        -- LB_N
+			sram_de2_CE_N       : out   std_logic;                                        -- CE_N
+			x_position_export   : out   std_logic_vector(10 downto 0);                    -- export
+			y_position_export   : out   std_logic_vector(10 downto 0)                     -- export
+		);
+	end component Niosballe;
+

@@ -1,0 +1,25 @@
+m255
+K3
+13
+cModel Technology
+Z0 d\\comix.rennes.supelec.fr\promo2019\baron_pau\Documents\AA_PROJET_FPGA\simulation\modelsim
+Epll_test
+w1539784910
+Z1 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z2 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+DPx12 altera_lnsim 23 altera_lnsim_components 0 22 TbMm4cCE15VLE>>M8DQnB3
+Z3 d\\comix.rennes.supelec.fr\promo2019\baron_pau\Documents\AA_PROJET_FPGA\simulation\modelsim
+8//comix.rennes.supelec.fr/promo2019/baron_pau/Documents/AA_PROJET_FPGA/pll_test_sim/pll_test.vho
+F//comix.rennes.supelec.fr/promo2019/baron_pau/Documents/AA_PROJET_FPGA/pll_test_sim/pll_test.vho
+l0
+L33
+Vd5C=>1I?UA99JCIDWm_[63
+!s100 U]Id7KV:]BF7[m1Ez08A93
+Z4 OV;C;10.1d;51
+32
+!i10b 1
+!s108 1539875561.789000
+!s90 -reportprogress|300|//comix.rennes.supelec.fr/promo2019/baron_pau/Documents/AA_PROJET_FPGA/pll_test_sim/pll_test.vho|
+!s107 //comix.rennes.supelec.fr/promo2019/baron_pau/Documents/AA_PROJET_FPGA/pll_test_sim/pll_test.vho|
+o-O0
+Z5 tExplicit 1

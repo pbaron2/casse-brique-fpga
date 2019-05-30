@@ -1,0 +1,11 @@
+13:10:50 **** Incremental Build of configuration Nios II for project Niosballe ****
+make all 
+makefile:759: warning: overriding commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+makefile:756: warning: ignoring old commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+Info: Building ../Niosballe_bsp/
+C:/intelFPGA/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Niosballe_bsp/
+[BSP build complete]
+[Niosballe build complete]
+
+13:10:51 Build Finished (took 1s.221ms)
+

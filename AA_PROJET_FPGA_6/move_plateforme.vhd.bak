@@ -1,0 +1,50 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+-- Déclaration de l'entité
+
+entity move_plateforme is	
+	generic(POS_MAX : INTEGER)
+	port(horl : in STD_LOGIC;
+		  left, right : in STD_LOGIC;
+		  pos_out : out INTEGER range 0 to POS_MAX);
+end move_plateforme;	
+
+---------------------------------------------------------------------------------------------------
+-- Description de l'architecture
+
+architecture A of move_plateforme is
+
+signal position : INTEGER range 0 to POS_MAX;
+
+begin	
+
+process(horl)
+begin
+
+	if(horl'event and horl='1') then
+		
+		if(left = '1')
+		
+			if(position > 0)
+				position <= position - 1;
+			end if;
+
+		end if;
+		
+		if(right = '1')
+		
+			if(position > 0)
+				position <= position - 1;
+			end if;
+
+		end if;
+		
+		pos_out <= position;
+			 
+    end if;
+
+end process;
+
+end A;	

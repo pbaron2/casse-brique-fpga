@@ -1,0 +1,106 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 16 16 304 176)
+	(text "afficheur" (rect 5 0 56 19)(font "Intel Clear" (font_size 8)))
+	(text "inst" (rect 8 139 24 156)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "horl" (rect 0 0 22 19)(font "Intel Clear" (font_size 8)))
+		(text "horl" (rect 21 27 43 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "x[10..0]" (rect 0 0 44 19)(font "Intel Clear" (font_size 8)))
+		(text "x[10..0]" (rect 21 43 65 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "y[10..0]" (rect 0 0 46 19)(font "Intel Clear" (font_size 8)))
+		(text "y[10..0]" (rect 21 59 67 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "vie_brick[2..0]" (rect 0 0 84 19)(font "Intel Clear" (font_size 8)))
+		(text "vie_brick[2..0]" (rect 21 75 105 94)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "pos_platform[10..0]" (rect 0 0 119 19)(font "Intel Clear" (font_size 8)))
+		(text "pos_platform[10..0]" (rect 21 91 140 110)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 96)(pt 16 96)(line_width 3))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "x_ball[10..0]" (rect 0 0 74 19)(font "Intel Clear" (font_size 8)))
+		(text "x_ball[10..0]" (rect 21 107 95 126)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 112)(pt 16 112)(line_width 3))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "y_ball[10..0]" (rect 0 0 75 19)(font "Intel Clear" (font_size 8)))
+		(text "y_ball[10..0]" (rect 21 123 96 142)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 128)(pt 16 128)(line_width 3))
+	)
+	(port
+		(pt 288 32)
+		(output)
+		(text "adr_etatbricks[5..0]" (rect 0 0 116 19)(font "Intel Clear" (font_size 8)))
+		(text "adr_etatbricks[5..0]" (rect 151 27 267 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 288 32)(pt 272 32)(line_width 3))
+	)
+	(port
+		(pt 288 48)
+		(output)
+		(text "r[7..0]" (rect 0 0 35 19)(font "Intel Clear" (font_size 8)))
+		(text "r[7..0]" (rect 232 43 267 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 288 48)(pt 272 48)(line_width 3))
+	)
+	(port
+		(pt 288 64)
+		(output)
+		(text "v[7..0]" (rect 0 0 37 19)(font "Intel Clear" (font_size 8)))
+		(text "v[7..0]" (rect 230 59 267 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 288 64)(pt 272 64)(line_width 3))
+	)
+	(port
+		(pt 288 80)
+		(output)
+		(text "b[7..0]" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
+		(text "b[7..0]" (rect 229 75 267 94)(font "Intel Clear" (font_size 8)))
+		(line (pt 288 80)(pt 272 80)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 272 144))
+	)
+)

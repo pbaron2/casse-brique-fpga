@@ -1,0 +1,39 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+
+entity score is
+PORT
+	(
+		briquecasse		:	 IN STD_LOGIC;
+		perdu		:	 IN STD_LOGIC;
+		score_actuel: OUT STD_LOGIC_VECTOR(9 downto 0) ;
+		clock: IN STD_LOGIC;
+		touteslesbriquescassees: OUT STD_LOGIC;
+		en_nios : IN STD_LOGIC
+		);
+end score;
+
+
+ARCHITECTURE a of score is
+signal  cnt : integer range 0 to 512:= 0;
+begin 
+process(clock)
+	
+begin
+	if (clock'event and clock='1') then
+		if perdu='1' then
+			touteslesbriquescassees <= '1';
+		end if;
+		if en_nios = '1' then
+		if briquecasse = '1' then
+			cnt <= cnt + 1 ;
+			score_actuel <= std_logic_vector(to_unsigned(cnt,10));	
+			if cnt = 512 then
+				touteslesbriquescassees <= '1';
+			end if;
+		end if;
+		end if;
+	end if;
+end process;
+end a ;

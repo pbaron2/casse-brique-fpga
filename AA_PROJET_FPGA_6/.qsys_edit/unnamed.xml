@@ -1,0 +1,227 @@
+<?xml version='1.0'?>
+<root>
+	<resource name="dock.ui.ThemeMap">
+		<key>eclipse</key>
+	</resource>
+	<resource name="ccontrol.frontend">
+		<frontend>
+			<settings>
+				<setting name="main">
+					<base>
+						<roots>
+							<root name="ccontrol north">
+								<layout factory="predefined">
+									<replacement id="rootccontrol north"/>
+									<delegate id="delegate_CommonDockStationFactory">
+										<id>ccontrol north</id>
+										<root>true</root>
+										<content delegate="flap dock">
+											<window auto="true" direction="SOUTH"/>
+											<placeholders>
+												<version>0</version>
+												<format>dock.PlaceholderList</format>
+											</placeholders>
+										</content>
+									</delegate>
+								</layout>
+								<adjacent>
+									<layout factory="dock.RootStationAdjacentFactory">
+										<type>dock.CContentArea.minimize</type>
+									</layout>
+								</adjacent>
+								<children ignore="false"/>
+							</root>
+							<root name="external">
+								<layout factory="predefined">
+									<replacement id="rootexternal"/>
+									<delegate id="delegate_CommonDockStationFactory">
+										<id>external</id>
+										<root>true</root>
+										<content delegate="screen dock">
+											<placeholders>
+												<version>0</version>
+												<format>dock.PlaceholderList</format>
+											</placeholders>
+										</content>
+									</delegate>
+								</layout>
+								<adjacent>
+									<layout factory="dock.RootStationAdjacentFactory">
+										<type>dock.CExternalizeArea</type>
+									</layout>
+								</adjacent>
+								<children ignore="false"/>
+							</root>
+							<root name="ccontrol south">
+								<layout factory="predefined">
+									<replacement id="rootccontrol south"/>
+									<delegate id="delegate_CommonDockStationFactory">
+										<id>ccontrol south</id>
+										<root>true</root>
+										<content delegate="flap dock">
+											<window auto="true" direction="SOUTH"/>
+											<placeholders>
+												<version>0</version>
+												<format>dock.PlaceholderList</format>
+											</placeholders>
+										</content>
+									</delegate>
+								</layout>
+								<adjacent>
+									<layout factory="dock.RootStationAdjacentFactory">
+										<type>dock.CContentArea.minimize</type>
+									</layout>
+								</adjacent>
+								<children ignore="false"/>
+							</root>
+							<root name="ccontrol east">
+								<layout factory="predefined">
+									<replacement id="rootccontrol east"/>
+									<delegate id="delegate_CommonDockStationFactory">
+										<id>ccontrol east</id>
+										<root>true</root>
+										<content delegate="flap dock">
+											<window auto="true" direction="SOUTH"/>
+											<placeholders>
+												<version>0</version>
+												<format>dock.PlaceholderList</format>
+											</placeholders>
+										</content>
+									</delegate>
+								</layout>
+								<adjacent>
+									<layout factory="dock.RootStationAdjacentFactory">
+										<type>dock.CContentArea.minimize</type>
+									</layout>
+								</adjacent>
+								<children ignore="false"/>
+							</root>
+							<root name="ccontrol center">
+								<layout factory="predefined" placeholder="dock.single.ccontrol\ center">
+									<replacement id="rootccontrol center"/>
+									<delegate id="delegate_CommonDockStationFactory">
+										<id>ccontrol center</id>
+										<root>true</root>
+										<content delegate="SplitDockStationFactory">
+											<fullscreen-action>false</fullscreen-action>
+											<node nodeId="-1" orientation="HORIZONTAL" divider="0.2">
+												<leaf id="0" nodeId="-1"/>
+												<node nodeId="-1" orientation="VERTICAL" divider="0.75">
+													<node nodeId="-1" orientation="HORIZONTAL" divider="0.75">
+														<node nodeId="-1" orientation="HORIZONTAL" divider="0.3333333333333333">
+															<leaf id="1" nodeId="-1"/>
+															<node nodeId="-1" orientation="VERTICAL" divider="0.75">
+																<leaf id="2" nodeId="-1"/>
+																<leaf id="3" nodeId="-1"/>
+															</node>
+														</node>
+														<node nodeId="-1" orientation="VERTICAL" divider="0.5">
+															<leaf id="4" nodeId="-1"/>
+															<leaf id="5" nodeId="-1"/>
+														</node>
+													</node>
+													<leaf id="6" nodeId="-1"/>
+												</node>
+											</node>
+										</content>
+									</delegate>
+								</layout>
+								<adjacent>
+									<layout factory="dock.RootStationAdjacentFactory">
+										<type>dock.CContentArea.center</type>
+									</layout>
+								</adjacent>
+								<children ignore="false">
+									<child>
+										<layout factory="delegate_StackDockStationFactory">
+											<selected>0</selected>
+											<placeholders>
+												<version>0</version>
+												<format>dock.PlaceholderList</format>
+												<entry>
+													<key shared="false">
+														<placeholder>dock.single.IP\ Catalog</placeholder>
+													</key>
+													<item key="convert" type="b">true</item>
+													<item key="convert-keys" type="a">
+														<item type="s">id</item>
+														<item type="s">index</item>
+														<item type="s">placeholder</item>
+													</item>
+													<item key="dock.id" type="i">0</item>
+													<item key="dock.index" type="i">0</item>
+													<item key="dock.placeholder" type="s">dock.single.IP\ Catalog</item>
+												</entry>
+											</placeholders>
+										</layout>
+										<children ignore="false">
+											<child>
+												<layout factory="predefined" placeholder="dock.single.IP\ Catalog">
+													<replacement id="dockablesingle IP Catalog"/>
+													<delegate id="delegate_ccontrol backup factory id">
+														<id>IP\ Catalog</id>
+														<area/>
+													</delegate>
+												</layout>
+												<children ignore="false"/>
+											</child>
+										</children>
+									</child>
+									<child>
+										<layout factory="delegate_StackDockStationFactory">
+											<selected>0</selected>
+											<placeholders>
+												<version>0</version>
+												<format>dock.PlaceholderList</format>
+												<entry>
+													<key shared="false">
+														<placeholder>dock.single.Hierarchy</placeholder>
+													</key>
+													<item key="convert" type="b">true</item>
+													<item key="convert-keys" type="a">
+														<item type="s">id</item>
+														<item type="s">index</item>
+														<item type="s">placeholder</item>
+													</item>
+													<item key="dock.id" type="i">0</item>
+													<item key="dock.index" type="i">0</item>
+													<item key="dock.placeholder" type="s">dock.single.Hierarchy</item>
+												</entry>
+											</placeholders>
+										</layout>
+										<children ignore="false">
+											<child>
+												<layout factory="predefined" placeholder="dock.single.Hierarchy">
+													<replacement id="dockablesingle Hierarchy"/>
+													<delegate id="delegate_ccontrol backup factory id">
+														<id>Hierarchy</id>
+														<area/>
+													</delegate>
+												</layout>
+												<children ignore="false"/>
+											</child>
+										</children>
+									</child>
+									<child>
+										<layout factory="delegate_StackDockStationFactory">
+											<selected>0</selected>
+											<placeholders>
+												<version>0</version>
+												<format>dock.PlaceholderList</format>
+												<entry>
+													<key shared="false">
+														<placeholder>dock.single.System\ Contents</placeholder>
+													</key>
+													<item key="convert" type="b">true</item>
+													<item key="convert-keys" type="a">
+														<item type="s">id</item>
+														<item type="s">index</item>
+														<item type="s">placeholder</item>
+													</item>
+													<item key="dock.id" type="i">0</item>
+													<item key="dock.index" type="i">0</item>
+													<item key="dock.placeholder" type="s">dock.single.System\ Contents</item>
+												</entry>
+												<entry>
+													<key shared="false">
+			

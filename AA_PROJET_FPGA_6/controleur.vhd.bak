@@ -1,0 +1,38 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+use IEEE.numeric_std.all;
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+-- Déclaration de l'entité
+
+entity controleur is	
+	port(score : in INTEGER;
+	     unites: out INTEGER;
+		  dizaines: out INTEGER;
+		  centaines: out INTEGER;
+		  milliers: out INTEGER;
+);
+
+end controleur;	
+
+
+
+
+
+
+---------------------------------------------------------------------------------------------------
+-- Description de l'architecture
+
+architecture A of controleur is
+
+
+begin	
+
+milliers <= score/1000
+centaines <= (score-milliers)/100
+dizaines <= (score-milliers-centaines)/10
+unites <= (score-milliers-centaines-dizaines)
+
+
+end A;	

@@ -1,0 +1,174 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate C:\altera\13.0\Niosballe.qsys --block-symbol-file --output-directory=C:\altera\13.0\Nios_balle --family="Cyclone V" --part=5CGXFC7C7F23C8
+Progress: Loading 13.0/Niosballe.qsys
+Progress: Reading input file
+Progress: Adding SRAM_DE2_0 [SRAM_DE2 1.0]
+Progress: Parameterizing module SRAM_DE2_0
+Progress: Adding adr_brique [altera_avalon_pio 18.0]
+Progress: Parameterizing module adr_brique
+Progress: Adding brique_morte [altera_avalon_pio 18.0]
+Progress: Parameterizing module brique_morte
+Progress: Adding clk_0 [clock_source 18.0]
+Progress: Parameterizing module clk_0
+Progress: Adding en [altera_avalon_pio 18.0]
+Progress: Parameterizing module en
+Progress: Adding en_nios [altera_avalon_pio 18.0]
+Progress: Parameterizing module en_nios
+Progress: Adding fincalcul [altera_avalon_pio 18.0]
+Progress: Parameterizing module fincalcul
+Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 18.0]
+Progress: Parameterizing module jtag_uart_0
+Progress: Adding nios2_gen2_0 [altera_nios2_gen2 18.0]
+Progress: Parameterizing module nios2_gen2_0
+Progress: Adding perdu [altera_avalon_pio 18.0]
+Progress: Parameterizing module perdu
+Progress: Adding pos_raquette [altera_avalon_pio 18.0]
+Progress: Parameterizing module pos_raquette
+Progress: Adding sram_0 [altera_up_avalon_sram 18.0]
+Progress: Parameterizing module sram_0
+Progress: Adding x_position [altera_avalon_pio 18.0]
+Progress: Parameterizing module x_position
+Progress: Adding y_position [altera_avalon_pio 18.0]
+Progress: Parameterizing module y_position
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: Niosballe.brique_morte: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: Niosballe.en: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: Niosballe.jtag_uart_0: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: Niosballe.pos_raquette: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate C:\altera\13.0\Niosballe.qsys --synthesis=VHDL --output-directory=C:\altera\13.0\Nios_balle\synthesis --family="Cyclone V" --part=5CGXFC7C7F23C8
+Progress: Loading 13.0/Niosballe.qsys
+Progress: Reading input file
+Progress: Adding SRAM_DE2_0 [SRAM_DE2 1.0]
+Progress: Parameterizing module SRAM_DE2_0
+Progress: Adding adr_brique [altera_avalon_pio 18.0]
+Progress: Parameterizing module adr_brique
+Progress: Adding brique_morte [altera_avalon_pio 18.0]
+Progress: Parameterizing module brique_morte
+Progress: Adding clk_0 [clock_source 18.0]
+Progress: Parameterizing module clk_0
+Progress: Adding en [altera_avalon_pio 18.0]
+Progress: Parameterizing module en
+Progress: Adding en_nios [altera_avalon_pio 18.0]
+Progress: Parameterizing module en_nios
+Progress: Adding fincalcul [altera_avalon_pio 18.0]
+Progress: Parameterizing module fincalcul
+Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 18.0]
+Progress: Parameterizing module jtag_uart_0
+Progress: Adding nios2_gen2_0 [altera_nios2_gen2 18.0]
+Progress: Parameterizing module nios2_gen2_0
+Progress: Adding perdu [altera_avalon_pio 18.0]
+Progress: Parameterizing module perdu
+Progress: Adding pos_raquette [altera_avalon_pio 18.0]
+Progress: Parameterizing module pos_raquette
+Progress: Adding sram_0 [altera_up_avalon_sram 18.0]
+Progress: Parameterizing module sram_0
+Progress: Adding x_position [altera_avalon_pio 18.0]
+Progress: Parameterizing module x_position
+Progress: Adding y_position [altera_avalon_pio 18.0]
+Progress: Parameterizing module y_position
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: Niosballe.brique_morte: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: Niosballe.en: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: Niosballe.jtag_uart_0: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: Niosballe.pos_raquette: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: Niosballe: Generating Niosballe "Niosballe" for QUARTUS_SYNTH
+Info: SRAM_DE2_0: "Niosballe" instantiated SRAM_DE2 "SRAM_DE2_0"
+Info: adr_brique: Starting RTL generation for module 'Niosballe_adr_brique'
+Info: adr_brique:   Generation command is [exec C:/intelfpga/18.0/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga/18.0/quartus/bin64/perl/lib -I C:/intelfpga/18.0/quartus/sopc_builder/bin/europa -I C:/intelfpga/18.0/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga/18.0/quartus/sopc_builder/bin -I C:/intelfpga/18.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga/18.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga/18.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=Niosballe_adr_brique --dir=C:/Users/mjabri_sof/AppData/Local/Temp/alt7819_2373934615005813516.dir/0003_adr_brique_gen/ --quartus_dir=C:/intelfpga/18.0/quartus --verilog --config=C:/Users/mjabri_sof/AppData/Local/Temp/alt7819_2373934615005813516.dir/0003_adr_brique_gen//Niosballe_adr_brique_component_configuration.pl  --do_build_sim=0  ]
+Info: adr_brique: Done RTL generation for module 'Niosballe_adr_brique'
+Info: adr_brique: "Niosballe" instantiated altera_avalon_pio "adr_brique"
+Info: brique_morte: Starting RTL generation for module 'Niosballe_brique_morte'
+Info: brique_morte:   Generation command is [exec C:/intelfpga/18.0/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga/18.0/quartus/bin64/perl/lib -I C:/intelfpga/18.0/quartus/sopc_builder/bin/europa -I C:/intelfpga/18.0/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga/18.0/quartus/sopc_builder/bin -I C:/intelfpga/18.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga/18.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga/18.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=Niosballe_brique_morte --dir=C:/Users/mjabri_sof/AppData/Local/Temp/alt7819_2373934615005813516.dir/0004_brique_morte_gen/ --quartus_dir=C:/intelfpga/18.0/quartus --verilog --config=C:/Users/mjabri_sof/AppData/Local/Temp/alt7819_2373934615005813516.dir/0004_brique_morte_gen//Niosballe_brique_morte_component_configuration.pl  --do_build_sim=0  ]
+Info: brique_morte: Done RTL generation for module 'Niosballe_brique_morte'
+Info: brique_morte: "Niosballe" instantiated altera_avalon_pio "brique_morte"
+Info: en_nios: Starting RTL generation for module 'Niosballe_en_nios'
+Info: en_nios:   Generation command is [exec C:/intelfpga/18.0/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga/18.0/quartus/bin64/perl/lib -I C:/intelfpga/18.0/quartus/sopc_builder/bin/europa -I C:/intelfpga/18.0/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga/18.0/quartus/sopc_builder/bin -I C:/intelfpga/18.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga/18.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga/18.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=Niosballe_en_nios --dir=C:/Users/mjabri_sof/AppData/Local/Temp/alt7819_2373934615005813516.dir/0005_en_nios_gen/ --quartus_dir=C:/intelfpga/18.0/quartus --verilog --config=C:/Users/mjabri_sof/AppData/Local/Temp/alt7819_2373934615005813516.dir/0005_en_nios_gen//Niosballe_en_nios_component_configuration.pl  --do_build_sim=0  ]
+Info: en_nios: Done RTL generation for module 'Niosballe_en_nios'
+Info: en_nios: "Niosballe" instantiated altera_avalon_pio "en_nios"
+Info: jtag_uart_0: Starting RTL generation for module 'Niosballe_jtag_uart_0'
+Info: jtag_uart_0:   Generation command is [exec C:/intelfpga/18.0/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga/18.0/quartus/bin64/perl/lib -I C:/intelfpga/18.0/quartus/sopc_builder/bin/europa -I C:/intelfpga/18.0/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga/18.0/quartus/sopc_builder/bin -I C:/intelfpga/18.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga/18.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/intelfpga/18.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=Niosballe_jtag_uart_0 --dir=C:/Users/mjabri_sof/AppData/Local/Temp/alt7819_2373934615005813516.dir/0006_jtag_uart_0_gen/ --quartus_dir=C:/intelfpga/18.0/quartus --verilog --config=C:/Users/mjabri_sof/AppData/Local/Temp/alt7819_2373934615005813516.dir/0006_jtag_uart_0_gen//Niosballe_jtag_uart_0_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag_uart_0: Done RTL generation for module 'Niosballe_jtag_uart_0'
+Info: jtag_uart_0: "Niosballe" instantiated altera_avalon_jtag_uart "jtag_uart_0"
+Info: nios2_gen2_0: "Niosballe" instantiated altera_nios2_gen2 "nios2_gen2_0"
+Info: pos_raquette: Starting RTL generation for module 'Niosballe_pos_raquette'
+Info: pos_raquette:   Generation command is [exec C:/intelfpga/18.0/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga/18.0/quartus/bin64/perl/lib -I C:/intelfpga/18.0/quartus/sopc_builder/bin/europa -I C:/intelfpga/18.0/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga/18.0/quartus/sopc_builder/bin -I C:/intelfpga/18.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga/18.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga/18.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=Niosballe_pos_raquette --dir=C:/Users/mjabri_sof/AppData/Local/Temp/alt7819_2373934615005813516.dir/0007_pos_raquette_gen/ --quartus_dir=C:/intelfpga/18.0/quartus --verilog --config=C:/Users/mjabri_sof/AppData/Local/Temp/alt7819_2373934615005813516.dir/0007_pos_raquette_gen//Niosballe_pos_raquette_component_configuration.pl  --do_build_sim=0  ]
+Info: pos_raquette: Done RTL generation for module 'Niosballe_pos_raquette'
+Info: pos_raquette: "Niosballe" instantiated altera_avalon_pio "pos_raquette"
+Info: x_position: Starting RTL generation for module 'Niosballe_x_position'
+Info: x_position:   Generation command is [exec C:/intelfpga/18.0/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga/18.0/quartus/bin64/perl/lib -I C:/intelfpga/18.0/quartus/sopc_builder/bin/europa -I C:/intelfpga/18.0/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga/18.0/quartus/sopc_builder/bin -I C:/intelfpga/18.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga/18.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga/18.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=Niosballe_x_position --dir=C:/Users/mjabri_sof/AppData/Local/Temp/alt7819_2373934615005813516.dir/0008_x_position_gen/ --quartus_dir=C:/intelfpga/18.0/quartus --verilog --config=C:/Users/mjabri_sof/AppData/Local/Temp/alt7819_2373934615005813516.dir/0008_x_position_gen//Niosballe_x_position_component_configuration.pl  --do_build_sim=0  ]
+Info: x_position: Done RTL generation for module 'Niosballe_x_position'
+Info: x_position: "Niosballe" instantiated altera_avalon_pio "x_position"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_005: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_006: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_007: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_008: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_009: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_010: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_011: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "Niosballe" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: irq_mapper: "Niosballe" instantiated altera_irq_mapper "irq_mapper"
+Info: rst_controller: "Niosballe" instantiated altera_reset_controller "rst_controller"
+Info: cpu: Starting RTL generation for module 'Niosballe_nios2_gen2_0_cpu'
+Info: cpu:   Generation command is [exec C:/intelFPGA/18.0/quartus/bin64//eperlcmd.exe -I C:/intelFPGA/18.0/quartus/bin64//perl/lib -I C:/intelfpga/18.0/quartus/sopc_builder/bin/europa -I C:/intelfpga/18.0/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga/18.0/quartus/sopc_builder/bin -I C:/intelfpga/18.0/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I C:/intelfpga/18.0/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I C:/intelfpga/18.0/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I C:/intelfpga/18.0/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- C:/intelfpga/18.0/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=Niosballe_nios2_gen2_0_cpu --dir=C:/Users/mjabri_sof/AppData/Local/Temp/alt7819_2373934615005813516.dir/0011_cpu_gen/ --quartus_bindir=C:/intelFPGA/18.0/quartus/bin64/ --verilog --config=C:/Users/mjabri_sof/AppData/Local/Temp/alt7819_2373934615005813516.dir/0011_cpu_gen//Niosballe_nios2_gen2_0_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info: cpu: # 2018.10.15 14:54:01 (*) Starting Nios II generation
+Info: cpu: # 2018.10.15 14:54:01 (*)   Checking for plaintext license.
+Info: cpu: # 2018.10.15 14:54:02 (*)   Plaintext license not found.
+Info: cpu: # 2018.10.15 14:54:02 (*)   Checking for encrypted license (non-evaluation).
+Info: cpu: # 2018.10.15 14:54:03 (*)   Encrypted license not found.  Defaulting to OCP evaluation license (produces a time-limited SOF)
+Info: cpu: # 2018.10.15 14:54:03 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2018.10.15 14:54:03 (*)   Creating all objects for CPU
+Info: cpu: # 2018.10.15 14:54:03 (*)     Testbench
+Info: cpu: # 2018.10.15 14:54:03 (*)     Instruction decoding
+Info: cpu: # 2018.10.15 14:54:03 (*)       Instruction fields
+Info: cpu: # 2018.10.15 14:54:03 (*)       Instruction decodes
+Info: cpu: # 2018.10.15 14:54:03 (*)       Signals for RTL simulation waveforms
+Info: cpu: # 2018.10.15 14:54:04 (*)       Instruction controls
+Info: cpu: # 2018.10.15 14:54:04 (*)     Pipeline frontend
+Info: cpu: # 2018.10.15 14:54:04 (*)     Pipeline backend
+Info: cpu: # 2018.10.15 14:54:06 (*)   Generating RTL from CPU objects
+Info: cpu: # 2018.10.15 14:54:08 (*)   Creating encrypted RTL
+Info: cpu: # 2018.10.15 14:54:09 (*) Done Nios II generation
+Info: cpu: Done RTL generation for module 'Niosballe_nios2_gen2_0_cpu'
+Info: cpu: "nios2_gen2_0" instantiated altera_nios2_gen2_unit "cpu"
+Info: nios2_gen2_0_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "nios2_gen2_0_data_master_translator"
+Info: jtag_uart_0_avalon_jtag_slave_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "jtag_uart_0_avalon_jtag_slave_translator"
+Info: nios2_gen2_0_data_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "nios2_gen2_0_data_master_agent"
+Info: jtag_uart_0_avalon_jtag_slave_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "jtag_uart_0_avalon_jtag_slave_agent"
+Info: jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: router_004: "mm_interconnect_0" instantiated altera_merlin_router "router_004"
+Info: nios2_gen2_0_data_master_limiter: "mm_interconnect_0" instantiated altera_merlin_traffic_limiter "nios2_gen2_0_data_master_limiter"
+Info: Reusing file C:/altera/13.0/Nios_balle/synthesis/submodules/altera_avalon_sc_fifo.v
+Info: SRAM_DE2_0_s0_burst_adapter: "mm_interconnect_0" instantiated altera_merlin_burst_adapter "SRAM_DE2_0_s0_burst_adapter"
+Info: Reusing file C:/altera/13.0/Nios_balle/synthesis/submodules/altera_avalon_st_pipeline_base.v
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file C:/altera/13.0/Nios_balle/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: SRAM_DE2_0_s0_rsp_width_adapter: "mm_interconnect_0" instantiated altera_merlin_width_adapter "SRAM_DE2_0_s0_rsp_width_adapter"
+Info: Reusing file C:/altera/13.0/Nios_balle/synthesis/submodules/altera_merlin_address_alignment.sv
+Info: Reusing file C:/altera/13.0/Nios_balle/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: avalon_st_adapter_002: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter_002"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: error_adapter_0: "avalon_st_adapter_002" instantiated error_adapter "error_adapter_0"
+Info: Niosballe: Done "Niosballe" with 32 modules, 59 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

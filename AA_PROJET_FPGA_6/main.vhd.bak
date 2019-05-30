@@ -1,0 +1,54 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+-- Déclaration de l'entité
+
+entity rvb is	
+	port(horl, video : in STD_LOGIC;
+	couleur : in STD_LOGIC_VECTOR (2 downto 0);
+	r, v, b : out INTEGER range 0 to 1023);
+end rvb;	
+
+---------------------------------------------------------------------------------------------------
+-- Description de l'architecture
+
+architecture A of rvb is	
+
+
+
+begin	
+
+process(horl)
+begin
+
+	if(horl'event and horl='1') then
+
+        if(video = '1') then
+		  		r <= 0;
+				v <= 0;
+				b <= 0;
+		  
+				if(couleur(0) = '1') then
+					r <= 1023;
+				end if;
+				
+				if(couleur(1) = '1') then
+					v <= 1023;
+				end if;
+				
+				if(couleur(2) = '1') then
+					b <= 1023;
+				end if;
+				
+		  else
+				r <= 0;
+				v <= 0;
+				b <= 0;
+		  end if;
+			 
+    end if;
+
+end process;
+
+end A;	

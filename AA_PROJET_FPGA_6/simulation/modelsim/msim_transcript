@@ -1,0 +1,81 @@
+# Reading C:/altera/13.0/modelsim_ase/tcl/vsim/pref.tcl 
+# do test_depl_plateforme_run_msim_rtl_vhdl.do 
+# if ![file isdirectory test_depl_plateforme_iputf_libs] {
+# 	file mkdir test_depl_plateforme_iputf_libs
+# }
+# 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+###### Libraries for IPUTF cores 
+###### End libraries for IPUTF cores 
+###### MIF file copy and HDL compilation commands for IPUTF cores 
+# 
+# 
+# vcom "//comix.rennes.supelec.fr/promo2019/baron_pau/Documents/AA_PROJET_FPGA/pll_test_sim/pll_test.vho"
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package altera_lnsim_components
+# -- Compiling entity pll_test
+# -- Compiling architecture RTL of pll_test
+# ** Error: //comix.rennes.supelec.fr/promo2019/baron_pau/Documents/AA_PROJET_FPGA/pll_test_sim/pll_test.vho(183): (vcom-1484) Unknown formal identifier "clock_name_0".
+# 
+# ** Error: //comix.rennes.supelec.fr/promo2019/baron_pau/Documents/AA_PROJET_FPGA/pll_test_sim/pll_test.vho(184): (vcom-1484) Unknown formal identifier "clock_name_1".
+# 
+# ** Error: //comix.rennes.supelec.fr/promo2019/baron_pau/Documents/AA_PROJET_FPGA/pll_test_sim/pll_test.vho(185): (vcom-1484) Unknown formal identifier "clock_name_2".
+# 
+# ** Error: //comix.rennes.supelec.fr/promo2019/baron_pau/Documents/AA_PROJET_FPGA/pll_test_sim/pll_test.vho(186): (vcom-1484) Unknown formal identifier "clock_name_3".
+# 
+# ** Error: //comix.rennes.supelec.fr/promo2019/baron_pau/Documents/AA_PROJET_FPGA/pll_test_sim/pll_test.vho(187): (vcom-1484) Unknown formal identifier "clock_name_4".
+# 
+# ** Error: //comix.rennes.supelec.fr/promo2019/baron_pau/Documents/AA_PROJET_FPGA/pll_test_sim/pll_test.vho(188): (vcom-1484) Unknown formal identifier "clock_name_5".
+# 
+# ** Error: //comix.rennes.supelec.fr/promo2019/baron_pau/Documents/AA_PROJET_FPGA/pll_test_sim/pll_test.vho(189): (vcom-1484) Unknown formal identifier "clock_name_6".
+# 
+# ** Error: //comix.rennes.supelec.fr/promo2019/baron_pau/Documents/AA_PROJET_FPGA/pll_test_sim/pll_test.vho(190): (vcom-1484) Unknown formal identifier "clock_name_7".
+# 
+# ** Error: //comix.rennes.supelec.fr/promo2019/baron_pau/Documents/AA_PROJET_FPGA/pll_test_sim/pll_test.vho(191): (vcom-1484) Unknown formal identifier "clock_name_8".
+# 
+# ** Error: //comix.rennes.supelec.fr/promo2019/baron_pau/Documents/AA_PROJET_FPGA/pll_test_sim/pll_test.vho(192): (vcom-1484) Unknown formal identifier "clock_name_global_0".
+# 
+# ** Error: //comix.rennes.supelec.fr/promo2019/baron_pau/Documents/AA_PROJET_FPGA/pll_test_sim/pll_test.vho(193): (vcom-1484) Unknown formal identifier "clock_name_global_1".
+# 
+# ** Error: //comix.rennes.supelec.fr/promo2019/baron_pau/Documents/AA_PROJET_FPGA/pll_test_sim/pll_test.vho(194): (vcom-1484) Unknown formal identifier "clock_name_global_2".
+# 
+# ** Error: //comix.rennes.supelec.fr/promo2019/baron_pau/Documents/AA_PROJET_FPGA/pll_test_sim/pll_test.vho(195): (vcom-1484) Unknown formal identifier "clock_name_global_3".
+# 
+# ** Error: //comix.rennes.supelec.fr/promo2019/baron_pau/Documents/AA_PROJET_FPGA/pll_test_sim/pll_test.vho(196): (vcom-1484) Unknown formal identifier "clock_name_global_4".
+# 
+# ** Error: //comix.rennes.supelec.fr/promo2019/baron_pau/Documents/AA_PROJET_FPGA/pll_test_sim/pll_test.vho(197): (vcom-1484) Unknown formal identifier "clock_name_global_5".
+# 
+# ** Error: //comix.rennes.supelec.fr/promo2019/baron_pau/Documents/AA_PROJET_FPGA/pll_test_sim/pll_test.vho(198): (vcom-1484) Unknown formal identifier "clock_name_global_6".
+# 
+# ** Error: //comix.rennes.supelec.fr/promo2019/baron_pau/Documents/AA_PROJET_FPGA/pll_test_sim/pll_test.vho(199): (vcom-1484) Unknown formal identifier "clock_name_global_7".
+# 
+# ** Error: //comix.rennes.supelec.fr/promo2019/baron_pau/Documents/AA_PROJET_FPGA/pll_test_sim/pll_test.vho(200): (vcom-1484) Unknown formal identifier "clock_name_global_8".
+# 
+# ** Error: //comix.rennes.supelec.fr/promo2019/baron_pau/Documents/AA_PROJET_FPGA/pll_test_sim/pll_test.vho(270): (vcom-1484) Unknown formal identifier "pll_bw_sel".
+# 
+# ** Error: //comix.rennes.supelec.fr/promo2019/baron_pau/Documents/AA_PROJET_FPGA/pll_test_sim/pll_test.vho(278): (vcom-1484) Unknown formal identifier "pll_extclk_0_cnt_src".
+# 
+# ** Error: //comix.rennes.supelec.fr/promo2019/baron_pau/Documents/AA_PROJET_FPGA/pll_test_sim/pll_test.vho(279): (vcom-1484) Unknown formal identifier "pll_extclk_1_cnt_src".
+# 
+# ** Error: //comix.rennes.supelec.fr/promo2019/baron_pau/Documents/AA_PROJET_FPGA/pll_test_sim/pll_test.vho(287): (vcom-1484) Unknown formal identifier "pll_slf_rst".
+# 
+# ** Error: //comix.rennes.supelec.fr/promo2019/baron_pau/Documents/AA_PROJET_FPGA/pll_test_sim/pll_test.vho(291): (vcom-1484) Unknown formal identifier "pll_vcoph_div".
+# 
+# ** Error: //comix.rennes.supelec.fr/promo2019/baron_pau/Documents/AA_PROJET_FPGA/pll_test_sim/pll_test.vho(304): VHDL Compiler exiting
+# ** Error: C:/altera/13.0/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./test_depl_plateforme_run_msim_rtl_vhdl.do line 17
+# C:/altera/13.0/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom "//comix.rennes.supelec.fr/promo2019/baron_pau/Documents/AA_PROJET_FPGA/pll_test_sim/pll_test.vho""
